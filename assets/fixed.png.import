@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/fixed.png-e5be50eb10aad21b6b7cb3d0c2f67b31.stex"
+path="res://.import/fixed.png-2d11c836999a9f556567fc79530c19dd.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://scenes/fixed.png"
-dest_files=[ "res://.import/fixed.png-e5be50eb10aad21b6b7cb3d0c2f67b31.stex" ]
+source_file="res://assets/fixed.png"
+dest_files=[ "res://.import/fixed.png-2d11c836999a9f556567fc79530c19dd.stex" ]
 
 [params]
 
