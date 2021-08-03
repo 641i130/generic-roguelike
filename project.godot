@@ -1,0 +1,91 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=4
+
+_global_script_classes=[ {
+"base": "Node",
+"class": "Walker",
+"language": "GDScript",
+"path": "res://scripts/gen.gd"
+} ]
+_global_script_class_icons={
+"Walker": ""
+}
+
+[application]
+
+config/name="RoguePractice"
+run/main_scene="res://scenes/World.tscn"
+config/icon="res://icon.png"
+
+[display]
+
+window/size/width=160
+window/size/height=96
+window/size/test_width=2560
+window/size/test_height=1440
+window/stretch/mode="2d"
+
+[global]
+
+color=false
+background=false
+
+[input]
+
+N={
+"deadzone": 0.5,
+"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":16777232,"unicode":0,"echo":false,"script":null)
+ ]
+}
+S={
+"deadzone": 0.5,
+"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":16777234,"unicode":0,"echo":false,"script":null)
+ ]
+}
+E={
+"deadzone": 0.5,
+"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":16777233,"unicode":0,"echo":false,"script":null)
+ ]
+}
+W={
+"deadzone": 0.5,
+"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":16777231,"unicode":0,"echo":false,"script":null)
+ ]
+}
+NE={
+"deadzone": 0.5,
+"events": [  ]
+}
+NW={
+"deadzone": 0.5,
+"events": [  ]
+}
+SE={
+"deadzone": 0.5,
+"events": [  ]
+}
+SW={
+"deadzone": 0.5,
+"events": [  ]
+}
+
+[physics]
+
+common/enable_pause_aware_picking=true
+
+[rendering]
+
+2d/snapping/use_gpu_pixel_snap=true
+environment/default_clear_color=Color( 0.133333, 0.137255, 0.137255, 1 )
+environment/default_environment="res://default_env.tres"
+
+[world]
+
+2d/cell_size=8
