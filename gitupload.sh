@@ -1,5 +1,5 @@
 #!/bin/bash
-if [[echo "$1" == ""]]
+if ["$1" == ""]
 then
 	echo "Please give a commit comment."
 else
