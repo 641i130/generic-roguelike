@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=2]
 
-[ext_resource path="res://scripts/startgame.gd" type="Script" id=1]
+[ext_resource path="res://scripts/world.gd" type="Script" id=1]
 [ext_resource path="res://scenes/player.tscn" type="PackedScene" id=2]
 [ext_resource path="res://assets/kenney_fix.png" type="Texture" id=3]
 
