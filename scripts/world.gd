@@ -1,9 +1,19 @@
 extends Node2D
 # WORLD SCRIPT
 
+onready var tileMap = $TileMap
+var borders = Rect2(1, 1, 38, 21)
+
+
 func _ready():
-	pass # Replace with function body.
+	randomize()
+	gen()
 
 
-#func _process(delta):
-#	pass
+func gen():
+	var w = Walker.new(Vector2(20,11),borders)
+	var map = w.walk(500)
+	w.queue_free()
+	for location in map:
+		tileMap.set_cellv(location, -1)
+	tileMap.update_bitmask_region(borders.position,borders.end)
