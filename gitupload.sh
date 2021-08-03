@@ -1,10 +1,3 @@
 #!/bin/bash
-if ["$1" = ""]
-then
-	echo "Please give a commit comment."
-else
-	git add .
-	git commit -m $1
-	git push
-fi
-
+read -p "Enter first string: " c
+git add .&&git commit -m "$c"&&git push||echo "Please give a commit comment."
