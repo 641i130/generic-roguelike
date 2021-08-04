@@ -22,7 +22,6 @@ func walk(steps):
 	for step in steps:
 		if steps_since_turn >= 6:
 			change_direction()
-		
 		if step():
 			step_history.append(position)
 		else:
