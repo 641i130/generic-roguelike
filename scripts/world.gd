@@ -11,7 +11,7 @@ func _ready():
 
 func gen():
 	var w = Walker.new(Vector2(32,18),borders)
-	var map = w.walk(5)
+	var map = w.walk(500)
 	w.queue_free()
 	for location in map:
 		tileMap.set_cellv(location, -1)
